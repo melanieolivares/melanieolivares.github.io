@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+   
+    <title>Melanie Olivares</title>
+</head>
+<body>
+
+    <header class = 'transition bg1'>
+        <nav class = 'default'>
+            <ul class = 'flex flex-row items-center justify-between'>
+                <div class = 'flex flex-row items-center'>
+                    <img class = 'logo' src="imgs/MelanieLogo.png" alt="drawn logo">
+                    <li class = 'title'>Melanie Olivares</li>
+                </div>
+                <div class = 'flex flex-row items-center'>
+                    <a class = 'links' href="#projectheader">Projects</a>
+                    <a class = 'links' href="#aboutmeheader">About</a>
+                </div>
+                <div class = 'contactbox flex items-center justify-center'>
+                    <button class = 'contact'>Contact Me</button>
+                </div>
+            </ul>
+        </nav>
+        <section class = 'bg1 default'>
+            <div class = 'flex flex-col'>
+                <div id = 'welcome'>welcome, i'm</div>
+                <div id = 'name' class='typing'></div>
+                <div id = 'position'>an aspiring website developer</div>
+                <div id = 'bio'>I’m always looking improve and learn more about website development and design.</div>
+                <div class = 'flex justify-center'>
+                    <img class = 'laptop' src="imgs/mockuper.png" alt="laptop">
+                </div>
+            </div>
+            <div class = 'flex justify-center'>
+                <div id="scroll-down">
+                    <span class="arrow-down"></span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class = 'bg2 default flex flex-col'>
+        <div id = 'projectheader'>PROJECTS.</div>
+        <div class = 'flex justify-center'>
+            <div class = 'flex flex-col stackAcc'>
+                <div class = 'accent'></div>
+                <div class = 'accent'></div>
+            </div>
+        </div>
+        <div class = 'flex flex-col'>
+            <div class = 'flex justify-center'>
+                <div class="card">
+                    <img id = 'projectimgs'src="imgs/pricingp1.png" alt="Pricing panel website">
+                    <div class = 'caption'>Pricing Panel</div>
+                    <div class = 'caption'>HTML & CSS</div>
+                    <div class = 'overlay overlay--blur shadow'>
+                        <div class = 'text'>Click for More Info</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'flex flex-row justify-evenly'>
+                <div class="card2">
+                    <img id = 'projectimgs'src="imgs/candyp1.png" alt="Candy musuem website">
+                    <div class = 'caption'>Museum of Candy</div>
+                    <div class = 'caption'>HTML, CSS, & Bootstrap</div>
+                    <div class = 'overlay2 overlay--blur shadow'>
+                        <div class = 'text'>Click for More Info</div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <img id = 'projectimgs'src="imgs/PingPongScoreKeeper.png" alt="Ping Pong Score Keeper website">
+                    <div class = 'caption'>Pricing Panel</div>
+                    <div class = 'caption'>HTML, CSS, & Tailwind</div>
+                    <div class = 'overlay3 overlay--blur shadow'>
+                        <div class = 'text'>Click for More Info</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class = 'flex justify-center'>
+            
+            
+            <div class = 'fade'></div>
+            <div class = 'flex justify-center'>
+                <img id = 'coding' src="imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="a screen with code">
+            </div>
+            <div class = 'fade'></div>
+            <div id = 'glass' class = 'default flex items-center flex-col'>
+                <div id = 'aboutmeheader'>WHO AM I?</div>
+                <div class = 'flex justify-center'>
+                    <div class = 'flex flex-col stackAcc'>
+                        <div class = 'accent'></div>
+                        <div class = 'accent'></div>
+                    </div>
+                </div>
+                <div class = 'flex justify-center items-center'>
+                    <div id = 'imgborder'></div>
+                    <img id = 'footerlogo' src="imgs/MelanieLogo.png" alt="">
+                </div>
+                <div class = 'flex justify-center items-center default flex-col'>
+                    <div id = 'intro-about'>Hi, I'm Mel.</div>
+                    <div class = 'about-content'>In my free time, I love playing video games especially FPS games such as Overwatch, Valorant, CS:GO (surf), and Call of Duty.</div>
+                    <div class="about-content">When I’m not playing games or watching xQc, I’m always learning about website development tools and concepts, working on projects, or looking for opportunities to gain experience.</div>
+                    <div class="call-to-action">If you have any questions, feel free to contact me!</div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
