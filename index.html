@@ -9,7 +9,8 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.inview.min.js"></script>
    
     <title>Melanie Olivares</title>
 </head>
@@ -63,21 +64,21 @@
                     <div class = 'caption'>Pricing Panel</div>
                     <div class = 'caption'>HTML & CSS</div>
                     <div class = 'overlay overlay--blur shadow' data-modal-target='#modal'>
-                        <div class = 'text'>Click for More Info</div>
+                        <div class = 'text'>Click to Further View</div>
                     </div>
                 </div>
             </div>
 
-            <div class = 'modal active' id = 'modal'>
+            <div class = 'modal' id = 'modal'>
                 <div class="modal-header">
                     <div class='modal-title'>PRICING TABLE</div>
                     <button data-close-button class = 'button-close'>&times;</button>
                 </div>
                 <div class="modal-body">
-                    <img class= 'gif'src="imgs/PricingTable.gif" alt="Pricing table gif">
+                    <img class= 'gif' id = 'gif-pricingpanel'src="" alt="Pricing table gif">
                 </div>
             </div>
-            <div id ='modal-overlay' class='active'></div>
+            <div id ='modal-overlay' class=''></div>
 
 
 
@@ -88,31 +89,42 @@
                     <div class = 'caption'>Museum of Candy</div>
                     <div class = 'caption'>HTML, CSS, & Bootstrap</div>
                     <div class = 'overlay2 overlay--blur shadow' data-modal2-target='#modal2'>
-                        <div class = 'text'>Click for More Info</div>
+                        <div class = 'text'>Click to Further View</div>
                     </div>
                 </div>
                 
                 <div class="card3">
                     <img id = 'projectimgs'src="imgs/PingPongScoreKeeper.png" alt="Ping Pong Score Keeper website">
-                    <div class = 'caption'>Pricing Panel</div>
+                    <div class = 'caption'>Ping Pong Score Keeper</div>
                     <div class = 'caption'>HTML, CSS, & Tailwind</div>
-                    <div class = 'overlay3 overlay--blur shadow'>
-                        <div class = 'text'>Click for More Info</div>
+                    <div class = 'overlay3 overlay--blur shadow' data-modal3-target='#modal3'>
+                        <div class = 'text'>Click to Further View</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class = 'modal active' id = 'modal2'>
+        <div class = 'modal' id = 'modal2'>
             <div class="modal-header">
                 <div class='modal-title'>Museum of Candy</div>
-                <button data-close2-button class = 'button-close2'>&times;</button>
+                <button data-close2-button class = 'button-close'>&times;</button>
             </div>
             <div class="modal-body">
-                <img class= 'gif'src="imgs/MC.gif" alt="Museum of candy gif">
+                <img class= 'gif' id = 'gif-MoC' src="" alt="Museum of candy gif">
             </div>
         </div>
-        <div id ='modal-overlay2' class='active'></div>
+        <div id ='modal-overlay2' class=''></div>
+
+        <div class = 'modal' id = 'modal3'>
+            <div class="modal-header">
+                <div class='modal-title'>Ping Pong Score Keeper</div>
+                <button data-close3-button class = 'button-close'>&times;</button>
+            </div>
+            <div class="modal-body flex justify-center">
+                <img class= 'gif' id= 'gif-pingpong' src="" alt="Ping Pong score keeper gif">
+            </div>
+        </div>
+        <div id ='modal-overlay3' class=''></div>
 
     </section>
     <footer class = 'flex justify-center'>
@@ -140,7 +152,19 @@
                     <div class = 'about-content'>In my free time, I love playing video games especially FPS games such as Overwatch, Valorant, CS:GO (surf), and Call of Duty.</div>
                     <div class="about-content">When I’m not playing games or watching xQc, I’m always learning about website development tools and concepts, working on projects, or looking for opportunities to gain experience.</div>
                     <div class="call-to-action">If you have any questions, feel free to contact me!</div>
-                    <button class = 'contact'>Contact Me</button>
+                    <div class = 'flex justify-center items-center'>
+                        <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow right">
+                        <button class = 'contact'>Contact Me</button>
+                        <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow left">
+                    </div>
+                    <div class = 'flex justify-center'>
+                        <img class = 'dialogue' id ='line1'src="imgs/dialogueicon.png" alt="Dialogue lines">
+                        <img class = 'dialogue' id='line2'src="imgs/dialogueicon.png" alt="Dialogue lines">
+                        <div id = 'date'></div>
+                        <div class="bark" id = 'bark1'>bark</div>
+                        <div class="bark" id = 'bark2'>bark</div>
+                        <div class="bark" id = 'bark3'>bark</div>
+                    </div>
                 </div>
                 
                     <a id = 'arrow-text' class ='flex justify-center flex-row items-center arrow-container'href="#start">

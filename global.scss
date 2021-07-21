@@ -64,6 +64,18 @@ html {
     height: 108px;
 }
 
+.contact-arrow{
+    height: 67px;
+    position: absolute;
+    right: 350px;
+    bottom: 90px;
+}
+
+.contact-arrow:nth-child(1){
+    transform: scalex(-1);
+    left: 350px;
+}
+
 .logo {
     width: 66px;
     height: 92px;
@@ -217,7 +229,6 @@ html {
 .arrow-container{
     margin-top: 160px;
     width: 100%;
-    // margin-left: 250px;
 
 }
 
@@ -232,7 +243,6 @@ html {
     font-weight: $weightnorm;
     font-size: 14px;
 }
-
 
 
 .laptop{
@@ -575,8 +585,8 @@ html {
     border-radius: 10px;
     z-index: 10;
     background-color: $lightpink;
-    width: 1100px;
-    max-width: 80%;
+    width: 85%;
+    max-width: 90%;
 }
 
 .modal.active{
@@ -627,10 +637,16 @@ html {
 #modal-overlay.active{
     opacity: 1;
     pointer-events: all;
+    z-index: 9;
+
 }
 
 .gif {
     border-radius: 5px;
+}
+
+#pinggif{
+    max-width: 60%;
 }
 
 #modal-overlay2{
@@ -648,4 +664,68 @@ html {
 #modal-overlay2.active{
     opacity: 1;
     pointer-events: all;
+    z-index: 9;
+
+}
+
+#modal-overlay3{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+#modal-overlay3.active{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9;
+}
+
+.dialogue{
+    height: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    left: 260px;
+    top: -140px;
+    opacity: 0;
+}
+
+.dialogue:nth-child(2){
+    height:20px;
+    top: -148px;
+    
+}
+
+#date {
+    color: white;
+    position: absolute;
+    left: 300px;
+    top: -170px;
+    
+}
+
+.bark{
+    position: absolute;
+    opacity: 1;
+    font-weight: $weightnorm;
+    font-size: 12px;
+    top: -60px;
+    left: 380px;
+    opacity: 0;
+}
+
+.bark:nth-child(odd){
+    top: -90px;
+    left: 330px;
+
+}
+
+.bark:nth-child(4){
+    top: -100px;
+    left: 400px;
 }
