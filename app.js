@@ -310,3 +310,11 @@ $('#intro-about').one('inview', function (event, isInView) {
 
     } 
 })
+
+const hamburger = document.querySelector('.hamburger-container');
+
+hamburger.addEventListener('click', function(){
+    hamburger.classList.toggle('change')
+    hamburger.classList.add('hamburger-overlay')
+})
+

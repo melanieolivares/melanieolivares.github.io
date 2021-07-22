@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="breakpointclass.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="jquery.inview.min.js"></script>
@@ -16,24 +17,30 @@
 </head>
 <body>
 
-    <header class = 'transition bg1'>
+    <header class = 'transition bg1' id = 'start'>
         <nav class = 'default'>
             <ul class = 'flex flex-row items-center justify-between'>
                 <div class = 'flex flex-row items-center'>
-                    <img class = 'logo'  id = 'start' src="imgs/MelanieLogo.png" alt="drawn logo">
+                    <img class = 'logo' src="imgs/MelanieLogo.png" alt="drawn logo">
                     <li class = 'title'>Melanie Olivares</li>
                 </div>
                 <div class = 'flex flex-row items-center'>
                     <a class = 'links' href="#projectheader">Projects</a>
                     <a class = 'links' href="#aboutmeheader">About</a>
                 </div>
-                <div class = 'contactbox flex items-center justify-center'>
+                <div class = 'contactbox flex items-center justify-center' id = 'top-button'>
                     <button class = 'contact'>Contact Me</button>
                 </div>
+                <div class="hamburger-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </ul>
+            
         </nav>
         <section class = 'bg1 default'>
-            <div class = 'flex flex-col'>
+            <div class = 'flex justify-center flex-col'>
                 <div id = 'welcome'>welcome, i'm</div>
                 <div id = 'name' class='typing'></div>
                 <div id = 'position'>an aspiring website developer</div>
@@ -60,7 +67,7 @@
         <div class = 'flex flex-col'>
             <div class = 'flex justify-center'>
                 <div class="card">
-                    <img id = 'projectimgs'src="imgs/pricingp1.png" alt="Pricing panel website">
+                    <img id = 'projectimgs' class = ''src="imgs/pricingp1.png" alt="Pricing panel website">
                     <div class = 'caption'>Pricing Panel</div>
                     <div class = 'caption'>HTML & CSS</div>
                     <div class = 'overlay overlay--blur shadow' data-modal-target='#modal'>
@@ -80,10 +87,7 @@
             </div>
             <div id ='modal-overlay' class=''></div>
 
-
-
-
-            <div class = 'flex flex-row justify-evenly'>
+            <div class = 'flex flex-col items-center xl:flex-row justify-evenly '>
                 <div class="card2">
                     <img id = 'projectimgs'src="imgs/candyp1.png" alt="Candy musuem website">
                     <div class = 'caption'>Museum of Candy</div>
@@ -127,53 +131,52 @@
         <div id ='modal-overlay3' class=''></div>
 
     </section>
-    <footer class = 'flex justify-center'>
-            <div class = 'fade'></div>
+    <footer class = 'flex justify-center bg3'>
+        <div class = 'fade'></div>
+        <div class = 'flex justify-center items-center'>
+            <img id = 'coding' src="imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="a screen with code">
+        </div>
+        <div class = 'fade'></div>
+        <div id = 'glass' class = 'default flex items-center flex-col'>
+            <img id = 'fullme-img'src="imgs/fullselfpic.png" alt="Picture of Melanie sitting down">
+            <img id = 'chikis' src="imgs/chikis.png" alt="Melanie's dog">
+            <div id = 'aboutmeheader'>WHO AM I?</div>
             <div class = 'flex justify-center'>
-                <img id = 'coding' src="imgs/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="a screen with code">
+                <div class = 'flex flex-col stackAcc'>
+                    <div class = 'accent'></div>
+                    <div class = 'accent'></div>
+                </div>
             </div>
-            <div class = 'fade'></div>
-            <div id = 'glass' class = 'default flex items-center flex-col'>
-                <img id = 'fullme-img'src="imgs/fullselfpic.png" alt="Picture of Melanie sitting down">
-                <img id = 'chikis' src="imgs/chikis.png" alt="Melanie's dog">
-                <div id = 'aboutmeheader'>WHO AM I?</div>
-                <div class = 'flex justify-center'>
-                    <div class = 'flex flex-col stackAcc'>
-                        <div class = 'accent'></div>
-                        <div class = 'accent'></div>
-                    </div>
-                </div>
+            <div class = 'flex justify-center items-center'>
+                <div id = 'imgborder'></div>
+                <img id = 'footerlogo' src="imgs/MelanieLogo.png" alt="">
+            </div>
+            <div class = 'flex justify-center items-center default flex-col'>
+                <div id = 'intro-about'>Hi, I'm Mel.</div>
+                <div class = 'about-content'>In my free time, I love playing video games especially FPS games such as Overwatch, Valorant, CS:GO (surf), and Call of Duty.</div>
+                <div class="about-content">When I’m not playing games or watching xQc, I’m always learning about website development tools and concepts, working on projects, or looking for opportunities to gain experience.</div>
+                <div class="call-to-action">If you have any questions, feel free to contact me!</div>
                 <div class = 'flex justify-center items-center'>
-                    <div id = 'imgborder'></div>
-                    <img id = 'footerlogo' src="imgs/MelanieLogo.png" alt="">
+                    <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow right">
+                    <button class = 'contact'>Contact Me</button>
+                    <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow left">
                 </div>
-                <div class = 'flex justify-center items-center default flex-col'>
-                    <div id = 'intro-about'>Hi, I'm Mel.</div>
-                    <div class = 'about-content'>In my free time, I love playing video games especially FPS games such as Overwatch, Valorant, CS:GO (surf), and Call of Duty.</div>
-                    <div class="about-content">When I’m not playing games or watching xQc, I’m always learning about website development tools and concepts, working on projects, or looking for opportunities to gain experience.</div>
-                    <div class="call-to-action">If you have any questions, feel free to contact me!</div>
-                    <div class = 'flex justify-center items-center'>
-                        <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow right">
-                        <button class = 'contact'>Contact Me</button>
-                        <img class = 'contact-arrow'src="imgs/contactarrow.png" alt="arrow left">
-                    </div>
-                    <div class = 'flex justify-center'>
-                        <img class = 'dialogue' id ='line1'src="imgs/dialogueicon.png" alt="Dialogue lines">
-                        <img class = 'dialogue' id='line2'src="imgs/dialogueicon.png" alt="Dialogue lines">
-                        <div id = 'date'></div>
-                        <div class="bark" id = 'bark1'>bark</div>
-                        <div class="bark" id = 'bark2'>bark</div>
-                        <div class="bark" id = 'bark3'>bark</div>
-                    </div>
+                <div class = 'flex justify-center'>
+                    <img class = 'dialogue' id ='line1'src="imgs/dialogueicon.png" alt="Dialogue lines">
+                    <img class = 'dialogue' id='line2'src="imgs/dialogueicon.png" alt="Dialogue lines">
+                    <div id = 'date'></div>
+                    <div class="bark" id = 'bark1'>bark</div>
+                    <div class="bark" id = 'bark2'>bark</div>
+                    <div class="bark" id = 'bark3'>bark</div>
                 </div>
-                
-                    <a id = 'arrow-text' class ='flex justify-center flex-row items-center arrow-container'href="#start">
-                        <img src="imgs/arrowup.png" id = 'arrow' alt="arrow up">
-                        <div id = 'arrow-text'>Back to Top</div>                  
-                    </a>
-                
             </div>
             
+            <a id = 'arrow-text' class ='flex justify-center flex-row items-center arrow-container'href="#start">
+                <img src="imgs/arrowup.png" id = 'arrow' alt="arrow up">
+                <div id = 'arrow-text'>Back to Top</div>                  
+            </a>
+            
+        </div>
     </footer>
 
 
