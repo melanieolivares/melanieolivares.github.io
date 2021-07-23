@@ -312,9 +312,92 @@ $('#intro-about').one('inview', function (event, isInView) {
 })
 
 const hamburger = document.querySelector('.hamburger-container');
+const overlaynav = document.querySelector('#overlay-nav');
+const hamburgermenu = document.querySelector('#hamburger-menu')
+const link1 = document.querySelector('#hamburger-link')
+const link2 = document.querySelector('#hamburger-link2')
+const menucontact = document.querySelector('#contactbox-menu')
+
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('change')
-    hamburger.classList.add('hamburger-overlay')
+    if (hamburger.classList.contains('change')){
+        overlaynav.classList.add('overlay-nav')
+        overlaynav.classList.add('fadein-overlay')
+        overlaynav.classList.remove('fadeout-overlay')
+        hamburgermenu.classList.add('hamburger-menu')
+        hamburgermenu.classList.add('fadein-overlay')
+        link1.classList.add('hamburger-links')
+        link2.classList.add('fadein-overlay')
+        link1.classList.add('hamburger-links')
+        link2.classList.add('fadein-overlay')
+        link1.classList.remove('fadeout-overlay')
+        link2.classList.remove('fadeout-overlay')
+        menucontact.classList.add('contactbox-menu')
+        menucontact.classList.add('fadein-overlay')
+        menucontact.classList.remove('fadeout-overlay')
+        document.body.style.overflow = 'hidden';
+
+    } else{
+        overlaynav.classList.add('fadeout-overlay')
+        overlaynav.classList.remove('overlay-nav')
+        overlaynav.classList.remove('fadein-overlay')
+        hamburgermenu.classList.remove('hamburger-menu')
+        hamburgermenu.classList.remove('fadein-overlay')
+        hamburgermenu.classList.add('fadeout-overlay')
+        link1.classList.remove('hamburger-links')
+        link2.classList.remove('fadein-overlay')
+        link1.classList.remove('hamburger-links')
+        link2.classList.remove('fadein-overlay')
+        link1.classList.add('fadeout-overlay')
+        link2.classList.add('fadeout-overlay')
+        menucontact.classList.remove('contactbox-menu')
+        menucontact.classList.remove('fadein-overlay')
+        menucontact.classList.add('fadeout-overlay')
+        document.body.style.overflow = '';
+
+    }
+})
+
+link1.addEventListener('click', function(){
+    hamburger.classList.toggle('change')
+    overlaynav.classList.add('fadeout-overlay')
+    overlaynav.classList.remove('overlay-nav')
+    overlaynav.classList.remove('fadein-overlay')
+    hamburgermenu.classList.remove('hamburger-menu')
+    hamburgermenu.classList.remove('fadein-overlay')
+    hamburgermenu.classList.add('fadeout-overlay')
+    link1.classList.remove('hamburger-links')
+    link2.classList.remove('fadein-overlay')
+    link1.classList.remove('hamburger-links')
+    link2.classList.remove('fadein-overlay')
+    link1.classList.add('fadeout-overlay')
+    link2.classList.add('fadeout-overlay')
+    menucontact.classList.remove('contactbox-menu')
+    menucontact.classList.remove('fadein-overlay')
+    menucontact.classList.add('fadeout-overlay')
+    document.body.style.overflow = '';
+
+})
+
+link2.addEventListener('click', function(){
+    hamburger.classList.toggle('change')
+    overlaynav.classList.add('fadeout-overlay')
+    overlaynav.classList.remove('overlay-nav')
+    overlaynav.classList.remove('fadein-overlay')
+    hamburgermenu.classList.remove('hamburger-menu')
+    hamburgermenu.classList.remove('fadein-overlay')
+    hamburgermenu.classList.add('fadeout-overlay')
+    link1.classList.remove('hamburger-links')
+    link2.classList.remove('fadein-overlay')
+    link1.classList.remove('hamburger-links')
+    link2.classList.remove('fadein-overlay')
+    link1.classList.add('fadeout-overlay')
+    link2.classList.add('fadeout-overlay')
+    menucontact.classList.remove('contactbox-menu')
+    menucontact.classList.remove('fadein-overlay')
+    menucontact.classList.add('fadeout-overlay')
+    document.body.style.overflow = '';
+
 })
 
