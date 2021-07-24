@@ -243,11 +243,9 @@
 
     }
 
-
     .card img{
         margin-top: 55px;
     }
-   
 
     .bg3{
         height: 810px;
@@ -256,8 +254,12 @@
         margin-top: 560px;
     }
     .bg3{
-        height: 730px;
+        height: 760px;
     }
+    #aboutmeheader{
+        font-size: 3rem;
+    }
+    
     
 }
 
@@ -267,14 +269,14 @@
     .card{
         transform: scale(.7,.7);
         
-        
     }
+    
 }
 
 
 @media only screen and (max-width: 700px){
     .card{
-        transform: scale(.69,.69);
+        transform: scale(.65,.65);
         
     }
 
@@ -308,7 +310,7 @@
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     .card{
         transform: scale(.65,.65);
         height: 510px;
@@ -341,7 +343,7 @@
 
 @media only screen and (max-width: 600px){
     #glass{
-        transform: scale(.4, .4);
+        transform: scale(.45, .45);
         margin-top: -60px;
     }
     .card2{
@@ -363,11 +365,15 @@
 
     }
     .bg3{
-        height: 390px;
+        height: 430px;
+    }
+
+    #aboutmeheader{
+        font-size: 3rem;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 541px){
     #position{
         font-size: 1.8rem;
     }
@@ -381,24 +387,30 @@
         height: 900px;
     }
     #scroll-down{
-        top: -80px;
+        top: -30px;
     }
     #glass{
         margin-top: -180px;
     }
     .bg3{
-        height: 365px;
+        height: 375px;
     }
+    .modal-header .modal-title{
+        font-size: 1rem;
+    
+    }
+
+    #glass{
+        transform: scale(.4, .4);
+        margin-top: -180px;
+    }
+    
 }
 
-@media only screen and (max-width: 431px){
-    #glass{
-        transform: scale(.3, .3);
-        margin-top: -450px;
-    }
+@media only screen and (max-width: 451px){
     .card2{
         transform: scale(.6,.6);
-        height: 500px;
+        height: 580px;
 
 
     }
@@ -414,8 +426,41 @@
         transform: scale(.7,.7);
 
     }
+}
+
+
+
+@media only screen and (max-width: 431px){
+    #glass{
+        transform: scale(.35, .35);
+        margin-top: -500px;
+    }
+    .card{
+        height: 480px;
+    }
+
+    .card img{
+        margin-top: 50px;
+    }
+    .card2{
+        transform: scale(.6,.6);
+        height: 450px;
+
+    }
+    .card3{
+        transform: scale(.6,.6);
+
+    }
+    .card2:hover{
+        transform: scale(.7,.7);
+
+    }
+    .card3:hover{
+        transform: scale(.7,.7);
+
+    }
     .bg3{
-        height: 210px;
+        height: 270px;
     }
     #welcome{
         font-size: .6rem;
@@ -443,7 +488,44 @@
         transform: scale(.7,.7);
         margin-left: -30px;
     }
+    .modal-header .modal-title{
+        font-size: .9rem;
+    
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+    
+    }
 }
+
+@media only screen and (max-width: 419px){
+    .card2{
+        transform: scale(.55,.55);
+        height: 400px;
+
+    }
+    .card3{
+        transform: scale(.55,.55);
+
+    }
+    .card2:hover{
+        transform: scale(.65,.65);
+
+    }
+    .card3:hover{
+        transform: scale(.65,.65);
+
+    }
+
+    #glass {
+        margin-top: -555px;
+
+    }
+}
+
 
 @media only screen and (max-width: 362px){
     #glass{
@@ -474,6 +556,10 @@
     
     #scroll-down{
         top: -140px;
-    
 }
+.modal-header .modal-title{
+    font-size: .8rem;
+
+}
+
 }
