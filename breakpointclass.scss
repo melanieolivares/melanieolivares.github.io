@@ -27,31 +27,33 @@
         margin-right: 0;
     }
     #glass {
-        margin-top: 890px;
+        margin-top: 1000px;
         transform: scale(.9,.9);
     }
     #coding{
-        margin-top: 890px;
+        margin-top: 1000px;
         transform: scale(.9,.9);
         top: 2810px;
 
 
     }
     .fade {
-        margin-top: 850px;
         transform: scale(.9,.9);
-        top: 2890px;
+        top: 3840px;
 
 
     }
-    .fade:nth-child(odd){
-        margin-top: 840px;
+    .fadebottom{
+        top: 4678px;
         transform: scale(.9,.9);
-
 
     }
     .bg3{
-        height: 1120px;
+        height: 1300px;
+    }
+
+    .card3{
+        margin-top: 250px;
     }
     
 }
@@ -108,57 +110,58 @@
 
 @media screen and (max-width:999px){
     #glass {
-        margin-top: 820px;
+        margin-top: 900px;
         transform: scale(.80,.80);
     }
     #coding{
-        margin-top: 820px;
+        margin-top: 900px;
         transform: scale(.80,.80);
-        top: 2810px;
 
 
     }
     .fade {
-        margin-top: 850px;
         transform: scale(.80,.80);
-        top: 2980px;
-
-
+        top: 3785px;
     }
-    .fade:nth-child(odd){
-        margin-top: 725px;
+    .fadebottom{
         transform: scale(.80,.80);
+        top: 4300px;
 
 
     }
     .bg3{
-        height: 995px;
+        height: 1150px;
     }
 }
 
 @media only screen and (max-width:890px){
     #glass {
-        margin-top: 740px;
+        margin-top: 700px;
         transform: scale(.75,.75);
     }
     #coding{
-        margin-top: 740px;
+        margin-top: 700px;
         transform: scale(.75,.75);
-        top: 2810px;
 
     }
     .fade {
-        margin-top: 850px;
         transform: scale(.80,.80);
-        top: 3025px;
-
+        top: 3610px;
     }
-    .fade:nth-child(odd){
-        margin-top: 625px;
+    .fadebottom{
         transform: scale(.80,.80);
+        top: 4315px;
+        height: 62px;
+
     }
     .card{
         transform: scale(.80,.80);
+    }
+    .card2{
+        margin-top: -90px;
+    }
+    .card3{
+        margin-top: 200px;
     }
     .card:hover{
         transform: scale(.9,.9);
@@ -168,14 +171,9 @@
         margin-top: 70px;
     }
     .bg3{
-        height: 960px;
+        height: 1090px;
     }
-    #capmar{
-        margin-bottom: 60px;
-    }
-    .overlay{
-        margin-top: -625px;
-    }
+    
 }
 
 
@@ -183,7 +181,7 @@
 
 @media only screen and (max-width: 849px){
     #glass {
-        margin-top: 640px;
+        margin-top: 600px;
         transform: scale(.65,.65);
     }
     #coding{
@@ -192,14 +190,19 @@
     }
     .fade {
         display: none;
-
-
     }
-    .fade:nth-child(odd){
+    .fadebottom{
         display: none;
     }
+    .card{
+        margin-bottom: 200px;
+    }
+    .card3{
+        margin-top: 200px;
+    }
+
     .bg3{
-        height: 800px;
+        height: 980px;
     }
     .links{
         display: none;
@@ -254,7 +257,7 @@
         margin-top: 560px;
     }
     .bg3{
-        height: 760px;
+        height: 980px;
     }
     #aboutmeheader{
         font-size: 3rem;
@@ -285,12 +288,12 @@
 
     }
     #glass {
-        margin-top: 460px;
-        transform: scale(.5,.5);
+        margin-top: 500px;
+        transform: scale(.6,.6);
     }
     
     .bg3{
-        height: 550px;
+        height: 880px;
     }
     .laptop{
         transform: scale(.9);
@@ -310,20 +313,19 @@
     }
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 665px){
     .card{
         transform: scale(.65,.65);
-        height: 510px;
         
     }
     .card2{
         transform: scale(.8,.8);
-        height: 650px;
-
+        margin-top: -150px;
 
     }
     .card3{
         transform: scale(.8,.8);
+        margin-top: 100px;
 
     }
     .card2:hover{
@@ -335,25 +337,32 @@
 
     }
     #glass {
-        margin-top: 110px;
+        margin-top: 325px;
+        transform: scale(.55,.55);
         
+        
+    }
+    .bg3{
+        height: 835px;
     }
     
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 615px){
     #glass{
         transform: scale(.45, .45);
-        margin-top: -60px;
+        margin-top: 50px;
     }
     .card2{
         transform: scale(.7,.7);
-        height: 580px;
+        margin-top: -200px;
 
 
     }
     .card3{
         transform: scale(.7,.7);
+        margin-top: 20px;
 
     }
     .card2:hover{
@@ -365,7 +374,7 @@
 
     }
     .bg3{
-        height: 430px;
+        height: 630px;
     }
 
     #aboutmeheader{
@@ -389,11 +398,9 @@
     #scroll-down{
         top: -30px;
     }
-    #glass{
-        margin-top: -180px;
-    }
+
     .bg3{
-        height: 375px;
+        height: 590px;
     }
     .modal-header .modal-title{
         font-size: 1rem;
@@ -402,7 +409,7 @@
 
     #glass{
         transform: scale(.4, .4);
-        margin-top: -180px;
+        margin-top: -50px;
     }
     
 }
@@ -426,6 +433,12 @@
         transform: scale(.7,.7);
 
     }
+    #glass{
+        margin-top: -150px;
+    }
+    .bg3{
+        height: 550px;
+    }
 }
 
 
@@ -433,34 +446,31 @@
 @media only screen and (max-width: 431px){
     #glass{
         transform: scale(.35, .35);
-        margin-top: -500px;
-    }
-    .card{
-        height: 480px;
+        margin-top: -365px;
     }
 
     .card img{
         margin-top: 50px;
     }
     .card2{
-        transform: scale(.6,.6);
-        height: 450px;
+        transform: scale(.55,.55);
 
     }
     .card3{
-        transform: scale(.6,.6);
+        transform: scale(.55,.55);
+        margin-top: -20px;
 
     }
     .card2:hover{
-        transform: scale(.7,.7);
+        transform: scale(.65,.65);
 
     }
     .card3:hover{
-        transform: scale(.7,.7);
+        transform: scale(.65,.65);
 
     }
     .bg3{
-        height: 270px;
+        height: 450px;
     }
     #welcome{
         font-size: .6rem;
@@ -503,55 +513,87 @@
 
 @media only screen and (max-width: 419px){
     .card2{
-        transform: scale(.55,.55);
-        height: 400px;
-
+        transform: scale(.5,.5);
+        margin-top: -250px;
     }
     .card3{
-        transform: scale(.55,.55);
+        transform: scale(.5,.5);
+        margin-top: -100px;
 
     }
     .card2:hover{
-        transform: scale(.65,.65);
+        transform: scale(.6,.6);
 
     }
     .card3:hover{
-        transform: scale(.65,.65);
+        transform: scale(.6,.6);
 
     }
 
     #glass {
-        margin-top: -555px;
+        margin-top: -550px;
 
+    }
+    .bg3{
+        height: 395px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card2{
+        transform: scale(.45,.45);
+        margin-top: -250px;
+    }
+    .card3{
+        transform: scale(.45,.45);
+        margin-top: -110px;
+
+    }
+    .card2:hover{
+        transform: scale(.55,.55);
+
+    }
+    .card3:hover{
+        transform: scale(.55,.55);
+
+    }
+
+    #glass {
+        margin-top: -550px;
+
+    }
+    .bg3{
+        height: 400px;
     }
 }
 
 
-@media only screen and (max-width: 362px){
+@media only screen and (max-width: 375px){
     #glass{
-        transform: scale(.25, .25);
-        margin-top: -450px;
+        transform: scale(.3, .3);
+        margin-top: -750px;
     }
     .card2{
-        transform: scale(.55,.55);
-        height: 500px;
+        transform: scale(.4,.4);
+        margin-top: -300px;
 
 
     }
     .card3{
-        transform: scale(.55,.55);
+        transform: scale(.4,.4);
+        margin-top: -200px;
 
     }
     .card2:hover{
-        transform: scale(.65,.65);
+        transform: scale(.5,.5);
 
     }
     .card3:hover{
-        transform: scale(.65,.65);
+        transform: scale(.5,.5);
 
     }
     .bg3{
-        height: 200px;
+        height: 320px;
     }
     
     #scroll-down{
