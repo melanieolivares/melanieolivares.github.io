@@ -398,7 +398,7 @@ html {
 }
 
 
-.overlay--blur{
+.overlay--blur:hover{
     backdrop-filter: blur(3px);
 }
 
@@ -885,6 +885,7 @@ html {
     height: 50px;
     z-index: 15;
 
+
 }
 
 .menucontact{
@@ -895,4 +896,8 @@ html {
 
 .menucontact:hover{
     background-color: $lightpink;
+}
+
+.menudisplay{
+    display: none;
 }

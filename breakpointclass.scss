@@ -117,7 +117,6 @@
         margin-top: 900px;
         transform: scale(.80,.80);
 
-
     }
     .fade {
         transform: scale(.80,.80);
@@ -195,10 +194,10 @@
         display: none;
     }
     .card{
-        margin-bottom: 200px;
+        margin-bottom: 230px;
     }
     .card3{
-        margin-top: 200px;
+        margin-top: 160px;
     }
 
     .bg3{
@@ -236,25 +235,32 @@
 }
 
 @media only screen and (max-width: 800px){
-    .card{
-        transform: scale(.75,.75);
-        
-        
-    }
-    .card:hover{
-        transform: scale(.8,.8);
-
-    }
-
     .card img{
-        margin-top: 55px;
+        width: 100%;
+        height: auto;
+        
+        
     }
+
+    .card-container{
+        width: 100%;
+    }
+    
+    // .overlay{
+    //     height: 100%;
+    // }
+
+    .card:hover{
+        transform: scale(.85,.85);
+
+    }
+
 
     .bg3{
         height: 810px;
     }
     #glass {
-        margin-top: 560px;
+        margin-top: 580px;
     }
     .bg3{
         height: 980px;
@@ -269,19 +275,20 @@
 
 @media only screen and (max-width: 770px){
     
-    .card{
-        transform: scale(.7,.7);
+    // .card{
+    //     transform: scale(.7,.7);
         
-    }
+    // }
     
 }
 
 
 @media only screen and (max-width: 700px){
-    .card{
-        transform: scale(.65,.65);
+    // .card{
+    //     transform: scale(.65,.65);
         
-    }
+        
+    // }
 
     .card:hover{
         transform: scale(.75,.75);
@@ -314,10 +321,10 @@
 }
 
 @media only screen and (max-width: 665px){
-    .card{
-        transform: scale(.65,.65);
+    // .card{
+    //     transform: scale(.65,.65);
         
-    }
+    // }
     .card2{
         transform: scale(.8,.8);
         margin-top: -150px;

@@ -316,7 +316,7 @@ const overlaynav = document.querySelector('#overlay-nav');
 const hamburgermenu = document.querySelector('#hamburger-menu')
 const link1 = document.querySelector('#hamburger-link')
 const link2 = document.querySelector('#hamburger-link2')
-const menucontact = document.querySelector('#contactbox-menu')
+const menucontact = document.querySelector('#menucontact')
 
 
 hamburger.addEventListener('click', function(){
@@ -328,15 +328,19 @@ hamburger.addEventListener('click', function(){
         hamburgermenu.classList.add('hamburger-menu')
         hamburgermenu.classList.add('fadein-overlay')
         link1.classList.add('hamburger-links')
-        link2.classList.add('fadein-overlay')
-        link1.classList.add('hamburger-links')
+        link1.classList.add('fadein-overlay')
+        link2.classList.add('hamburger-links')
         link2.classList.add('fadein-overlay')
         link1.classList.remove('fadeout-overlay')
         link2.classList.remove('fadeout-overlay')
-        menucontact.classList.add('contactbox-menu')
+        menucontact.classList.add('menucontact')
         menucontact.classList.add('fadein-overlay')
         menucontact.classList.remove('fadeout-overlay')
+        link1.classList.remove('menudisplay')
+        link2.classList.remove('menudisplay')
+        menucontact.classList.remove('menudisplay')
         document.body.style.overflow = 'hidden';
+        
 
     } else{
         overlaynav.classList.add('fadeout-overlay')
@@ -346,14 +350,17 @@ hamburger.addEventListener('click', function(){
         hamburgermenu.classList.remove('fadein-overlay')
         hamburgermenu.classList.add('fadeout-overlay')
         link1.classList.remove('hamburger-links')
-        link2.classList.remove('fadein-overlay')
-        link1.classList.remove('hamburger-links')
+        link1.classList.remove('fadein-overlay')
+        link2.classList.remove('hamburger-links')
         link2.classList.remove('fadein-overlay')
         link1.classList.add('fadeout-overlay')
         link2.classList.add('fadeout-overlay')
-        menucontact.classList.remove('contactbox-menu')
+        menucontact.classList.remove('menucontact')
         menucontact.classList.remove('fadein-overlay')
         menucontact.classList.add('fadeout-overlay')
+        link1.classList.add('menudisplay')
+        link2.classList.add('menudisplay')
+        menucontact.classList.add('menudisplay')
         document.body.style.overflow = '';
 
     }
@@ -368,12 +375,12 @@ link1.addEventListener('click', function(){
     hamburgermenu.classList.remove('fadein-overlay')
     hamburgermenu.classList.add('fadeout-overlay')
     link1.classList.remove('hamburger-links')
-    link2.classList.remove('fadein-overlay')
-    link1.classList.remove('hamburger-links')
+    link1.classList.remove('fadein-overlay')
+    link2.classList.remove('hamburger-links')
     link2.classList.remove('fadein-overlay')
     link1.classList.add('fadeout-overlay')
     link2.classList.add('fadeout-overlay')
-    menucontact.classList.remove('contactbox-menu')
+    menucontact.classList.remove('menucontact')
     menucontact.classList.remove('fadein-overlay')
     menucontact.classList.add('fadeout-overlay')
     document.body.style.overflow = '';
@@ -389,12 +396,12 @@ link2.addEventListener('click', function(){
     hamburgermenu.classList.remove('fadein-overlay')
     hamburgermenu.classList.add('fadeout-overlay')
     link1.classList.remove('hamburger-links')
-    link2.classList.remove('fadein-overlay')
-    link1.classList.remove('hamburger-links')
+    link1.classList.remove('fadein-overlay')
+    link2.classList.remove('hamburger-links')
     link2.classList.remove('fadein-overlay')
     link1.classList.add('fadeout-overlay')
     link2.classList.add('fadeout-overlay')
-    menucontact.classList.remove('contactbox-menu')
+    menucontact.classList.remove('menucontact')
     menucontact.classList.remove('fadein-overlay')
     menucontact.classList.add('fadeout-overlay')
     document.body.style.overflow = '';

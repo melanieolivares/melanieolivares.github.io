@@ -41,12 +41,11 @@
                 </div>
             </ul>
         </nav>
-        <div>
         <div class = 'hamburger-menu' id = 'hamburger-menu'>
-            <a href="#projectheader" class = 'hamburger-links' id = 'hamburger-link'>PROJECTS</a>
-            <a href="#aboutmeheader" class = 'hamburger-links'id = 'hamburger-link2'>ABOUT ME</a>
-            <div class = 'contactbox-menu' id ='contactbox-menu'>
-                <button class = 'contact menucontact'>Contact Me</button>
+            <a href="#projectheader" class = 'menudisplay' id = 'hamburger-link'>PROJECTS</a>
+            <a href="#aboutmeheader" class = 'menudisplay' id = 'hamburger-link2'>ABOUT ME</a>
+            <div class = 'contactbox-menu'>
+                <button class = 'contact menudisplay' id = 'menucontact'>Contact Me</button>
             </div>
         </div>
 
@@ -78,7 +77,9 @@
         <div class = 'flex flex-col'>
             <div class = 'flex justify-center'>
                 <div class="card">
-                    <img id = 'projectimgs' class = ''src="imgs/pricingp1.png" alt="Pricing panel website">
+                    <div class = 'card-container'>
+                        <img id = 'projectimgs' class = ''src="imgs/pricingp1.png" alt="Pricing panel website">
+                    </div>
                     <div class = 'caption'>Pricing Panel</div>
                     <div class = 'caption' id = 'capmar'>HTML & CSS</div>
                     <div class = 'overlay overlay--blur shadowLarge' data-modal-target='#modal'>

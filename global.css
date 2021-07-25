@@ -388,7 +388,7 @@ html {
   font-size: 1.125rem;
 }
 
-.overlay--blur {
+.overlay--blur:hover {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
@@ -950,5 +950,9 @@ html {
 
 .menucontact:hover {
   background-color: #FFDBDC;
+}
+
+.menudisplay {
+  display: none;
 }
 /*# sourceMappingURL=global.css.map */
