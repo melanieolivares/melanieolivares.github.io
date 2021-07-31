@@ -305,7 +305,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 110px 0 0 0;
+  margin: 110px 0 0px 0;
 }
 
 .stackAcc {
@@ -320,7 +320,11 @@ html {
 
 .accent:nth-child(2) {
   background-color: #FFDBDC;
-  margin: -2px 0 0 30px;
+  margin: -2px 0 0px 30px;
+}
+
+#accentmar {
+  margin-bottom: 110px;
 }
 
 .card {
@@ -362,6 +366,10 @@ html {
 .shadowLarge:hover {
   -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cardcontainer {
+  width: 100%;
 }
 
 .overlay {
@@ -459,7 +467,7 @@ html {
 .card img {
   width: 776.49px;
   height: 483.72px;
-  margin: 110px 0 25px 0;
+  margin: 0px 0 25px 0;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -819,18 +827,6 @@ html {
   z-index: 10;
 }
 
-.fadeout-overlay {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
-  display: none;
-}
-
-.fadein-overlay {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
-  display: block;
-}
-
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -857,6 +853,12 @@ html {
   to {
     opacity: 1;
   }
+}
+
+.fadein-overlay {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+  display: block;
 }
 
 @-webkit-keyframes fade-out {
@@ -887,6 +889,12 @@ html {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.fadeout-overlay {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
+  display: none;
 }
 
 .hamburger-menu {

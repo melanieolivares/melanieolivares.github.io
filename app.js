@@ -327,6 +327,7 @@ hamburger.addEventListener('click', function(){
         overlaynav.classList.remove('fadeout-overlay')
         hamburgermenu.classList.add('hamburger-menu')
         hamburgermenu.classList.add('fadein-overlay')
+        hamburgermenu.classList.remove('fadeout-overlay')
         link1.classList.add('hamburger-links')
         link1.classList.add('fadein-overlay')
         link2.classList.add('hamburger-links')
