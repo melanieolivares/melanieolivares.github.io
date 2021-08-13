@@ -13,7 +13,7 @@ for(let btn of contactMeBtns){
     btn.addEventListener('click', clipboardCopy);
    
     async function clipboardCopy(){
-        await navigator.clipboard.writeText('olivares.j.melanie@gmail.com');
+        await navigator.clipboard.writeText('olivares.melanie.j@gmail.com');
         btn.innerText = 'Email Copied!';
 
 }
