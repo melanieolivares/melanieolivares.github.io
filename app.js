@@ -20,12 +20,13 @@ for(let btn of contactMeBtns){
 }
 
 
-const textName = 'melanie olivares'
+const textName = 'an aspiring website devloper and bruin 🐻'
+
 const speed = 90;
 let i = 0
 
 function typeWriter (){
-    const name = document.querySelector('#name');
+    const name = document.querySelector('#position');
     
     if (i < textName.length){
         name.innerHTML += textName.charAt(i);
@@ -35,7 +36,6 @@ function typeWriter (){
 }
 
 typeWriter();
-
 
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
@@ -196,7 +196,7 @@ function delayText(){
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             const dialogue = `Have a great rest of your ${days[myDay]}!`
-            const speed2 = 75;
+            const speed2 = 90;
             let j = 0
             
             function typeWriter2 (){
@@ -290,10 +290,10 @@ function deleteBark(num, delay){
 }
 
 async function dialogue(){
-    await delayLine(1, 1000)
-    await delayLine(2, 1500)
+    await delayLine(1, 500)
+    await delayLine(2, 1000)
     await delayText()
-    await delayBark(1, 4000)
+    await delayBark(1, 3100)
     await delayBark(2, 250)
     await delayBark(3, 250)
     await deleteBark(1, 400)
@@ -306,7 +306,7 @@ $('#intro-about').one('inview', function (event, isInView) {
     if (isInView === true) {
         setTimeout(()=>{
             dialogue()
-        }, 7000)
+        }, 500)
 
     } 
 })
