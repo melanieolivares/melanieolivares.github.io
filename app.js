@@ -196,7 +196,7 @@ function delayText(){
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             const dialogue = `Have a great rest of your ${days[myDay]}!`
-            const speed2 = 75;
+            const speed2 = 95;
             let j = 0
             
             function typeWriter2 (){
@@ -290,10 +290,10 @@ function deleteBark(num, delay){
 }
 
 async function dialogue(){
-    await delayLine(1, 1000)
-    await delayLine(2, 1500)
+    await delayLine(1, 500)
+    await delayLine(2, 1000)
     await delayText()
-    await delayBark(1, 4000)
+    await delayBark(1, 3100)
     await delayBark(2, 250)
     await delayBark(3, 250)
     await deleteBark(1, 400)
@@ -306,7 +306,7 @@ $('#intro-about').one('inview', function (event, isInView) {
     if (isInView === true) {
         setTimeout(()=>{
             dialogue()
-        }, 7000)
+        }, 500)
 
     } 
 })
