@@ -5,31 +5,10 @@
     
 }
 
-@media only screen and (max-width: 2028px){
-    #position{
-        font-size: 3.5rem;
-        margin-left: 230px;
-
-    }
-
-}
-
-@media only screen and (max-width: 1720px){
-    #position{
-        font-size: 3.25rem;
-        margin-left: 140px;
-
-    }
-
-}
-
 @media only screen and (max-width: 1280px){
     .contactbox{
         width: fit-content;
         margin-right: 15px;
-    }
-    #position{
-        margin-left: 0;
     }
 
 }
@@ -39,6 +18,9 @@
         margin-right: 0;
     }
     #name {
+        margin-right: 0;
+    }
+    #position {
         margin-right: 0;
     }
     #bio {
@@ -76,13 +58,10 @@
     
 }
 
-@media only screen and (max-width: 1175px){
-    #position{
-        font-size: 2.9rem;
-    }
-}
-
 @media only screen and (max-width: 1023px){
+    #position{
+        font-size: 3.5rem;
+    }
     
     #top-button{
         transform: scale(.9,.9);
@@ -129,10 +108,6 @@
         transform: scale(1,1);
 
     }
-
-    #position{
-        font-size: 2.7rem;
-    }
 }
 
 @media screen and (max-width:999px){
@@ -157,9 +132,6 @@
     }
     .bg3{
         height: 1150px;
-    }
-    #position{
-        font-size: 2.6rem;
     }
 }
 
@@ -202,9 +174,7 @@
     .bg3{
         height: 1090px;
     }
-    #position{
-        font-size: 2.4rem;
-    }
+    
 }
 
 
@@ -248,7 +218,9 @@
     #name{
         font-size: 2rem;
     }
-   
+    #position{
+        font-size: 2.5rem;
+    }
     #bio{
         font-size: 1rem;
     }
@@ -261,9 +233,7 @@
     .logo{
         transform: scale(1,1);
     }
-    #position{
-        font-size: 2.2rem;
-    }
+    
 }
 
 @media only screen and (max-width: 800px){
@@ -314,16 +284,11 @@
     
 }
 
-@media only screen and (max-width: 775px){
-
-    #position{
-        font-size: 2rem;
-    }
-}
 
 
 
-@media only screen and (max-width: 709px){
+
+@media only screen and (max-width: 700px){
     
     #glass {
         margin-top: 510px;
@@ -336,15 +301,17 @@
     .laptop{
         transform: scale(.9);
     }
-    
+    #position{
+        font-size: 2rem;
+    }
     #name{
         font-size: 1.5rem;
     }
 
-    #bio{
-        text-align: center;
+    #welcome{
+        font-size: .8rem;
     }
-    #position{
+    #bio{
         text-align: center;
     }
 }
@@ -416,7 +383,9 @@
 }
 
 @media only screen and (max-width: 547px){
-    
+    #position{
+        font-size: 1.8rem;
+    }
     #name{
         font-size: 1.4rem;
     }
@@ -427,7 +396,7 @@
         height: 900px;
     }
     #scroll-down{
-        top: -100px;
+        top: -30px;
     }
     .card2{
         margin-top: -320px;
@@ -515,7 +484,9 @@
     #name{
         font-size:1.2rem;
     }
-    
+    #position{
+        font-size: 1.3rem;
+    }
     #bio{
         font-size: .7rem;
     }
